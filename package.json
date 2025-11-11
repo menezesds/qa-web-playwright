@@ -1,0 +1,23 @@
+{
+  "name": "qa-web-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/menezesds/qa-web-playwright.git",
+  "author": "menezesds <menezesds@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0"
+  },
+  "scripts": {
+    "test:e2e": "yarn playwright test --project=all-browsers",
+    "test:e2e:dev": "yarn playwright test --headed --retries=0 --project=chromium --trace on",
+    "test:e2e:report": "yarn playwright show-report",
+    "test:e2e:debug": "yarn playwright test --headed --retries=0 --reporter=line --project=chromium --trace on --debug",
+    "test:e2e:smoke": "yarn playwright test --grep @smoke --project=chromium",
+    "test:e2e:non-smoke": "yarn playwright test --grep-invert @smoke --project=chromium"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
+  }
+}

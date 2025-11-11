@@ -1,18 +1,18 @@
 export default {
-    ci: {
-        prefix: 'http://localhost:3000',
-        sufix: ''
-    },
-    local: {
-        api: 'http://localhost:3000/api',
-        home: 'http://localhost:3000'
-    },
-    staging: {
-        api: 'https://your-staging-url.com/api',
-        home: 'https://your-staging-url.com'
-    },
-    production: {
-        api: 'https://your-production-url.com/api',
-        home: 'https://your-production-url.com'
-    }
-}
+  ci: {
+    prefix: 'https://dev-myapp-',
+    suffix: '.mydomain.com',
+  },
+  local: {
+    api: 'https://local-myapp.mydomain.com/api',
+    home: 'https://local-myapp.mydomain.com',
+  },
+  production: {
+    api: 'https://myapp.mydomain.com/api',
+    home: 'https://myapp.mydomain.com',
+  },
+  staging: {
+    api: 'https://staging-myapp.mydomain.com/api',
+    home: 'https://staging-myapp.mydomain.com',
+  },
+};
